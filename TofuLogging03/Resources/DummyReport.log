@@ -1,0 +1,4 @@
+This file represents some dummy in-memory text that must be logged preferably as a separate file.
+Tofu facilitates this by providing Report logging which is designed to drop a chunk text into a single file.
+
+Please see ILogManager.AddReport method for more details.

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<LogConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <autostart>false</autostart>
+  <defaultentry>
+    <streamer>
+      <type name="Tofu.Logging.Streamers.LogStreamerFile, Tofu.Logging" />
+      <parameters />
+    </streamer>
+    <locallevels>Global</locallevels>
+    <localtrace>Global</localtrace>
+  </defaultentry>
+  <cleanupsessions>2</cleanupsessions>
+  <cleanuplogs>3</cleanuplogs>
+  <cleanupresources>true</cleanupresources>
+  <cleanupmessages>100</cleanupmessages>
+  <folder />
+  <folderpath>ProgramDataFolder</folderpath>
+  <autoflushstartuptime>2000</autoflushstartuptime>
+  <autoflushperiodictime>1000</autoflushperiodictime>
+  <globaltrace>true</globaltrace>
+  <globallevels>All</globallevels>
+  <formattersobject>
+    <formatter name="txt">
+      <parameters />
+      <type name="Tofu.Logging.Formatters.LogFormatterObjectToString, Tofu.Logging" />
+    </formatter>
+    <formatter name="xml">
+      <parameters />
+      <type name="Tofu.Logging.Formatters.LogFormatterObjectToXml, Tofu.Logging" />
+    </formatter>
+    <defaultformatter name="txt">
+      <parameters />
+      <type name="Tofu.Logging.Formatters.LogFormatterObjectToString, Tofu.Logging" />
+    </defaultformatter>
+  </formattersobject>
+  <formattersexception>
+    <formatter name="txt">
+      <parameters />
+      <type name="Tofu.Logging.Formatters.LogFormatterExceptionToText, Tofu.Logging" />
+    </formatter>
+    <defaultformatter name="txt">
+      <parameters />
+      <type name="Tofu.Logging.Formatters.LogFormatterExceptionToText, Tofu.Logging" />
+    </defaultformatter>
+  </formattersexception>
+</LogConfig>
